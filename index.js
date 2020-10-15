@@ -1,5 +1,4 @@
 const express = require('express');
-// const bodyParser = require('body-parser');
 const fs = require('fs');
 const router = express.Router();
 const app = express();
@@ -39,8 +38,6 @@ router.get(('/users/all'), (req, res) => {
         res.end(JSON.stringify(data, 0, 4));
     });
 })
-
-console.log("helloWorld")
 
 app.use('/', router);
 app.listen(process.env.port || 8081);
