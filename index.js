@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const router = express.Router();
 const app = express();
-var merge = require('./mergeSort');
+
 
 router.get(('/home'), (req, res) => {
     res.sendFile(__dirname + "/" + "home.html");
